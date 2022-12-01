@@ -124,7 +124,6 @@ Bevindingen die ik heb gevonden met het gebruik van shocks:
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
 
   | Menno: 
   | Vraag over CSS grid, een button blijft niet binnen het grid, standaard styling van 
