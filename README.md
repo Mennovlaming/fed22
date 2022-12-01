@@ -127,7 +127,6 @@ Bevindingen die ik heb gevonden met het gebruik van shocks:
   samen met je groepje opstellen
 
   | Menno: 
-  |
   | Vraag over CSS grid, een button blijft niet binnen het grid, standaard styling van 
   | de button blijft groter
 
@@ -138,6 +137,9 @@ Bevindingen die ik heb gevonden met het gebruik van shocks:
   | vraag over font
   | css bestanden
   | vraagje over een html element (pijltjes)
+
+  | Wessel: 
+  | Vraag over wanneer je grid gebruikt en wanneer flexbox
 
   ### Verslag van meeting
   Deze week zijn we gaan testen op verschillende beperkingen, onder andere oogbeperkingen
