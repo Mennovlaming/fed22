@@ -36,19 +36,23 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  https://www.carhartt-wip.com/en/
-  https://www.carhartt-wip.com/en/journal/collaborations
+  https://www.cocacolanederland.nl
+  https://www.cocacolanederland.nl/onze-merken-en-verhalen
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="/readme-images/carhartt.png" width="375px" alt="omschrijving van de pagina">
+  <img src="/readme-images/cocacola.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="/readme-images/carhartt2.png" width="375px" alt="omschrijving van de pagina">
+  <img src="/readme-images/cocacola2.png" width="375px" alt="omschrijving van de pagina">
 
-
-  ### github test
+ <!--
+ git add .
+ git commit -m "message"
+ git push
+  -->
+  
 </details>
 
 
@@ -62,27 +66,29 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen:
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+ Screenreader werkt niet goed, dit heeft dezelfde reden als dat hij niet goed te gebruiken is met het hamburgermenu, hier zie je deze meeste content dus dat is echt iets wat je mist.
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  De site is duidelijk bedoeld om met de muis te gebruiken, met toetsenbord is het gewoon niet erg bruikbaar. Voor de content die je wilt zien moet je het hamburgermenu gebruiken, dit is gewoon niet te doen met alleen het toetsenbord, omdat je hier niet op komt. Wel is er goed rekening gehouden met de hoeveelheid van de links waar je op kan tabben, het zijn er niet te veel.
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+ Bevindingen die ik heb gevonden met het gebruik van elastiekjes:
+  De site is goed te gebruiken, het duurt allemaal wat langer, maar als je je goed concentreerd is het prima te doen, wel verlvelend als je haast hebt.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+Bevindingen die ik heb gevonden met het gebruik van shocks:
+  De site is bij de eerste shocks (parkinson, trillingen) nog te gebruiken, kleine knoppen zijn lastig, dingen zoals typen is niet te doen.
 
+  Bij de tweede shocks (spasme voor korte tijd) was de site redelijk te bedienen, alleen op het moment van de shock kan je niks.
+
+  Bij de derde shocks (eerste stand, spasme langere tijd) is de site eigenlijk niet te bedienen, de enige manier waarop je hier op een site zou kunnen is als je hele korte secties hebt. 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Met de brillen afzonderlijk is de website nog redelijk te gebruiken, in combinatie eigenlijk niet.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Voor kleurenblinden is deze website nog goed te gebruiken, voor hovers gebruiken ze underlines onder de tekst in plaats van andere kleuren, dit is een goede oplossing hiervoor, ook een goede oplossing hiervoor is het gebruik van de weight van de font, dit is ook zonder kleur te zien.
+
+  Met dark en light mode veranderd de site niet, dit is denk ik omdat rood kenmerkend is voor coca cola, en ze die niet willen veranderen.
 
 </details>
 
@@ -120,20 +126,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | idelene        | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | vraag over dit | en dit             | en ik dit    | en dan ik dat    |
-  | en over dat    | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Menno: 
+  |
+  | Vraag over CSS grid, een button blijft niet binnen het grid, standaard styling van 
+  | de button blijft groter
 
+  | Hilal: 
+  | Vraag over de breakdown schets
+
+  | Laiba: 
+  | vraag over font
+  | css bestanden
+  | vraagje over een html element (pijltjes)
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  Deze week zijn we gaan testen op verschillende beperkingen, onder andere oogbeperkingen
 
 </details>
 

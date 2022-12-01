@@ -3,6 +3,9 @@
 /**************/
 *, *::after, *::before {
   box-sizing:border-box;  
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 button, summary {
@@ -23,9 +26,6 @@ button, summary {
 }
 
 
-
-
-
 /****************/
 /* JOUW STYLING */
 /****************/
@@ -37,3 +37,90 @@ body {
   background-color:var(--color-background);
 }
 
+header nav {
+	padding: .75rem;
+	width: 100%;
+	background-color: black;
+}
+
+header nav h2 {
+	text-transform: uppercase;
+	color: white;
+	font-size: .8rem;
+	text-align:center;
+}
+
+section:first-of-type img{
+	width: 2em;
+}
+
+nav {
+	display: flex;
+	gap: 10px;
+	position: relative;
+}
+
+nav h2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 2;
+}
+
+.overlay {
+	margin-top: 50px;
+	height: 0;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: black;
+	overflow-y: hidden;
+	transition: 0.5s;
+}
+  
+.overlay-content {
+	position: relative;
+	top: 2em;
+	width: 100%;
+
+}
+
+.overlay li {
+	list-style-type: none;
+
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr; 
+  }
+
+
+/* child van li */
+.overlay a {
+	text-decoration: none;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	font-weight: 800;
+	color: white;
+	margin-left: .75em;
+	/* verticaal center */
+	align-self: center;
+}
+/* child van li */
+.overlay button {
+	color: red;
+	border: none;
+	font-size: 3em;
+	background: none;
+	
+	/* hoe haal ik de standaard padding van een button weg */
+	/* horizontaal aan het eind */
+	justify-self: end; 
+	
+	
+}
+  
+.heightOverlay {
+	height: 100%;
+  }
