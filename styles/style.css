@@ -13,9 +13,6 @@ button, summary {
 }
 
 
-
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
@@ -23,6 +20,9 @@ button, summary {
 	/* startje */
 	--color-text:#111;
 	--color-background:#eee;
+
+	--max-height: 152px;
+	/* kijk of deze maxheight de offsetheight van het element kan zijn. */
 }
 
 
@@ -37,37 +37,73 @@ body {
   background-color:var(--color-background);
 }
 
-header nav {
+button {
+	border: none;
+	background: none;
+} 
+
+header nav:first-of-type {
 	padding: .75rem;
 	width: 100%;
 	background-color: black;
 }
 
-header nav h2 {
+header nav:first-of-type ul li h2 {
 	text-transform: uppercase;
 	color: white;
 	font-size: .8rem;
 	text-align:center;
 }
 
-section:first-of-type img{
+nav:first-of-type ul li button img {
 	width: 2em;
 }
 
-nav {
+header nav:first-of-type ul {
 	display: flex;
-	gap: 10px;
-	position: relative;
+	justify-content: space-between;
+	align-items: center;
+}
+nav ul li {
+	list-style-type: none;
 }
 
-nav h2 {
+
+ 
+/* de Class overlay-content is .nav2 > ul, deze pakt hij niet */
+.overlay-content ul {
+	position: relative;
+	
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	
+}
+.overlay-content li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.overlay-content button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-grow: 2;
+	height: 2.5em;
+}
+.overlay-content button img {
+	width: 1.5em;
+	
+}
+.overlay-content li:nth-of-type(2) ul {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 }
 
-.overlay {
+/* nav2 is header section nav:nth-of-type(2), die pakt hij niet */
+.nav2 {
 	margin-top: 50px;
 	height: 0;
 	width: 100%;
@@ -79,48 +115,84 @@ nav h2 {
 	overflow-y: hidden;
 	transition: 0.5s;
 }
-  
-.overlay-content {
-	position: relative;
-	top: 2em;
-	width: 100%;
 
+.nav2 > ul > li {
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: 2fr 1fr; 
 }
 
-.overlay li {
-	list-style-type: none;
 
-	
-	display: grid;
-	grid-template-columns: 1fr 1fr; 
-  }
-
-
-/* child van li */
-.overlay a {
+.nav2 a {
 	text-decoration: none;
 	font-size: 1.2em;
 	text-transform: uppercase;
 	font-weight: 800;
 	color: white;
 	margin-left: .75em;
-	/* verticaal center */
+	
 	align-self: center;
 }
-/* child van li */
-.overlay button {
-	color: red;
-	border: none;
-	font-size: 3em;
-	background: none;
-	
-	/* hoe haal ik de standaard padding van een button weg */
-	/* horizontaal aan het eind */
-	justify-self: end; 
+
+
+ul li button:not(section:first-of-type nav:first-of-type ul li button) {
+	justify-self: end;
+	background-color: #202020;
+	padding: 0 1em 0 1em;
+}
+
+ul li {
+	border-bottom: 1px solid #202020; 
+}
+
+.heightOverlay {
+	height: 100%;
+  } 
+
+.openList {
+	max-height:0em;
+	overflow:hidden;
+
+	transition:.3s;
+}
+
+.openList.openLi {
+	max-height:var(--max-height);
+
+	transition: .5s;
+}
+
+
+
+/* probeer een css klas te maken die display weergeeft als je de ul aanklikt.
+doe ipv dispay none iets met left right top enz, zie nav voorbeeld sanne. */
+
+/* Als het scherm minimaal deze grootte is, gebruik dan deze styling
+Echte site breekt bij 1000 pixels  */
+@media screen and (min-width: 62.5em) {
+	.nav2 {
+		background-color: white;
+	}
+	.overlay-content {
+		background-color: #202020;
+		width: 20em;
+		height: 100vh;
+		display: flex;
+    	flex-direction: column;
+    	gap: 3em;
+		padding-top: 5em;
+	}
+	.overlay-content li a {
+		font-weight: 300;
+		font-size: 1em;
+	}
+	.overlay-content li:nth-of-type(2) ul {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-top: 1em;
+		gap: 1em;
+	}
 	
 	
 }
-  
-.heightOverlay {
-	height: 100%;
-  }
