@@ -42,10 +42,27 @@ button {
 	background: none;
 } 
 
+
+
+
+
+/*************/
+/* hoofdmenu */
+/*************/
 header nav:first-of-type {
-	padding: .75rem;
-	width: 100%;
+	
+}
+
+header nav:first-of-type ul {
+	min-height:3em;
+	padding: 0 .75rem;
 	background-color: black;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	list-style: none;
 }
 
 header nav:first-of-type ul li h2 {
@@ -55,145 +72,163 @@ header nav:first-of-type ul li h2 {
 	text-align:center;
 }
 
-nav:first-of-type ul li button img {
+/* hamburger en zoekbutton */
+header nav:first-of-type ul li button img {
 	width: 2em;
 }
 
-header nav:first-of-type ul {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-nav ul li {
-	list-style-type: none;
+/* hamburbutton als menu open is */
+header nav:first-of-type ul li:nth-of-type(1) button.open img {
+	content: url("../images/icons/close.png");
 }
 
 
- 
-/* de Class overlay-content is .nav2 > ul, deze pakt hij niet */
-.overlay-content ul {
-	position: relative;
-	
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	
-}
-.overlay-content li {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	
-}
 
-.overlay-content button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 2.5em;
-}
-.overlay-content button img {
-	width: 1.5em;
-	
-}
-.overlay-content li:nth-of-type(2) ul {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-}
 
-/* nav2 is header section nav:nth-of-type(2), die pakt hij niet */
-.nav2 {
-	margin-top: 50px;
-	height: 0;
-	width: 100%;
+
+/*****************/
+/* hamburgermenu */
+/*****************/
+header nav:nth-of-type(2) {
 	position: fixed;
-	z-index: 1;
-	top: 0;
+	top: 3em;
 	left: 0;
-	background-color: black;
+	right:0;
+	height: 0;
+	z-index: 1;
 	overflow-y: hidden;
+	/* margin-top: 3em; - nu top 3em */
+	
+	background-color: black;
+	
 	transition: 0.5s;
 }
 
-.nav2 > ul > li {
-	list-style-type: none;
-	display: grid;
-	grid-template-columns: 2fr 1fr; 
+/* als hamburgermenu open is */
+header nav:nth-of-type(2).open {
+	height: calc(100% - 3em); /* min de top van 3em */
+} 
+
+header nav:nth-of-type(2) > ul {
+	max-height:100%;
+	overflow-y: auto;
 }
 
-
-.nav2 a {
-	text-decoration: none;
-	font-size: 1.2em;
-	text-transform: uppercase;
-	font-weight: 800;
-	color: white;
-	margin-left: .75em;
-	
-	align-self: center;
-}
-
-
-ul li button:not(section:first-of-type nav:first-of-type ul li button) {
-	justify-self: end;
-	background-color: #202020;
-	padding: 0 1em 0 1em;
-}
-
-ul li {
+/* alle li's  */
+header nav:nth-of-type(2) > ul li {
 	border-bottom: 1px solid #202020; 
 }
 
-.heightOverlay {
-	height: 100%;
-  } 
+/* eerste level li's */
+header nav:nth-of-type(2) > ul > li {
+	display:flex;
+	flex-wrap: wrap;
+}
 
-.openList {
+/* alle a's */
+header nav:nth-of-type(2) a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 800;
+	color: white;
+	min-height: 2rem;
+
+	display:flex;
+	align-items: center;
+
+	font-size:1.2em;
+}
+
+/* a's in eerste level li's */
+header nav:nth-of-type(2) > ul > li > a {
+	flex-grow:1;
+	padding:0 .75em;
+}
+
+/* plusbuttons */
+header nav:nth-of-type(2) > ul > li button {
+	width:2rem;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #202020;
+}
+
+header nav:nth-of-type(2) > ul > li button img {
+	width: 1.5em;
+	display:block;
+}
+
+/* als submenu open is */
+header nav:nth-of-type(2) > ul > li button.open img {
+	content:url(../images/icons/minus.png);
+}
+
+/* een submenu */
+header nav:nth-of-type(2) ul ul {
+	position: relative;
+	
+	width: 100%;
 	max-height:0em;
 	overflow:hidden;
 
 	transition:.3s;
 }
 
-.openList.openLi {
+/* als submenu open is */
+header nav:nth-of-type(2) ul ul.open {
 	max-height:var(--max-height);
-
 	transition: .5s;
 }
 
-/* probeer een css klas te maken die display weergeeft als je de ul aanklikt.
-doe ipv dispay none iets met left right top enz, zie nav voorbeeld sanne. */
+/* a's in submenu */
+header nav:nth-of-type(2) ul ul a {
+	padding:0 .75em 0 1.5em;
+}
 
-/* Als het scherm minimaal deze grootte is, gebruik dan deze styling
-Echte site breekt bij 1000 pixels  */
-@media screen and (min-width: 62.5em) {
-	.nav2 {
-		background-color: white;
-	}
-	.overlay-content {
-		background-color: #202020;
+
+
+
+@media (min-width: 62.5em) {
+	header nav:nth-of-type(2) {
+		background-color: #f00d;
+		right:unset;
 		width: 20em;
-		height: 100vh;
+	}
+
+	header nav:nth-of-type(2) > ul {
 		display: flex;
-    	flex-direction: column;
-    	gap: 3em;
+    flex-direction: column;
+    gap: 3em;
 		padding-top: 5em;
 	}
-	.overlay-content li a {
+
+	header nav:nth-of-type(2) > ul li {
+		border-bottom: none; 
+	}
+
+	header nav:nth-of-type(2) a {
 		font-weight: 300;
 		font-size: 1em;
 	}
-	.overlay-content li:nth-of-type(2) ul {
+
+	header nav:nth-of-type(2) > ul ul {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		margin-top: 1em;
+		
 		gap: 1em;
 	}
-}
 
-main section {
-	background-color: #F51812;
-	height: 100vh;
+	header nav:nth-of-type(2) ul ul.open {
+		padding-top: 1em;
+	}
+
+	header nav:nth-of-type(2) > ul > li > a {
+		flex-grow:0;
+	}
+	
+	
 }
