@@ -8,7 +8,6 @@ const plusImage = document.querySelector(".merkenList button img")
 //  const heightUl = document.querySelector(".overlay-content");
 //  let height = heightUl.offsetHeight;
 
-
 let toggleList = true;
 let toggleHamburger = true;
 
@@ -22,25 +21,24 @@ const openMenu = () => {
     toggleHamburger = !toggleHamburger;  
 }
 
-const openLi = () => {
-    onzeMerken.classList.toggle('openLi');
-    // changeimg hier triggeren
-    // console.log(height);
-}
-
 // if plusbutton is clicked, trigger changeimg
 const changeImg = () => {
     if (toggleList === true) {
         plusImage.src = "/images/icons/minus.png";
     } else {
-        plusImage.src = "/images/icons/plus.png";
+        plusImage.src = "/images/icons/plus2.png";
     }
     toggleList = !toggleList;
+}
+
+const openLi = () => {
+    onzeMerken.classList.toggle('openLi');
 }
  
 const openLiChangeImg = () => {
     changeImg();
     openLi();
 }
+
 hamburger.addEventListener("click", openMenu);
 plusButton.addEventListener("click", openLiChangeImg);

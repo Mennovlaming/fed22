@@ -162,8 +162,6 @@ ul li {
 	transition: .5s;
 }
 
-
-
 /* probeer een css klas te maken die display weergeeft als je de ul aanklikt.
 doe ipv dispay none iets met left right top enz, zie nav voorbeeld sanne. */
 
@@ -193,6 +191,9 @@ Echte site breekt bij 1000 pixels  */
 		margin-top: 1em;
 		gap: 1em;
 	}
-	
-	
+}
+
+main section {
+	background-color: #F51812;
+	height: 100vh;
 }
