@@ -126,11 +126,11 @@ Bevindingen die ik heb gevonden met het gebruik van shocks:
   ### Agenda voor meeting
 
   | Menno: 
-  | Vraag over CSS grid, een button blijft niet binnen het grid, standaard styling van 
-  | de button blijft groter
+  | ik heb een vraag over het semantisch maken van mijn HTML, mijn CSS luistert niet en ik weet niet hoe het komt.
 
   | Hilal: 
-  | Vraag over de breakdown schets
+  | Vraag 1: Doe ik de fontface goed op deze manier?
+  | Vraag 2: Vind een carousel starten lastig, vooral als je bij het swipen de nummers ziet veranderen zoals op mijn site. Hoe kan ik dit het beste aanpakken en heb ik hier javascript voor nodig?
 
   | Laiba: 
   | vraag over font
@@ -161,12 +161,29 @@ Bevindingen die ik heb gevonden met het gebruik van shocks:
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Menno: 
+  | ik heb een vraag over het semantisch maken van mijn HTML, 
+  | mijn CSS luistert niet en ik weet niet hoe het komt.
 
+  | Hilal: 
+  | Vraag over de breakdown schets
+
+  | Laiba: 
+  | Vraag 1
+  | Formulieren, hoe moet je erin verwerken?
+  | Vraag 2 (Surface plane)
+  | Mag ik het verstoppen? 
+  | (Surface plane)
+  | css bestanden
+  | vraagje over een html element (pijltjes)
+
+  | Wessel: 
+  | Vraag 1
+  | Hamburger menu openen lukt, maar weer sluiten lukt niet. Hoe komt dit?
+  | Vraag 2
+  | Display flex items plaatsen hoe ik wil zonder, losse items van space between
+  | Vraag 3
+  | Hoe ontwerp je het kruisje dat input form leegt?
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
