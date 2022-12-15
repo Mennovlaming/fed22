@@ -3,13 +3,13 @@ const hamburgerMenu = document.querySelector("header nav:nth-of-type(2)");
 const plusButtons = document.querySelectorAll("header nav:nth-of-type(2) > ul > li button");
 
 
-const toggleHamburgerMenu = () => {
+function toggleHamburgerMenu() {
     hamburgerMenu.classList.toggle('open');
     hamburgerButton.classList.toggle('open'); 
 }
 
 // anders werkt this niet :-(
-const toggleSubMenu = () => {
+function toggleSubMenu() {
     const dePlusButton = this;
     const hetSubMenu =  dePlusButton.nextElementSibling;
 
