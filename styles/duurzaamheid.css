@@ -1,5 +1,5 @@
 section:first-of-type {
-    background-image: url(/images/duurzaamheid/duurzaamheidbanner.jpeg);
+    background-image: url(../images/duurzaamheid/duurzaamheidbanner.jpeg);
     background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -78,16 +78,16 @@ section:nth-of-type(4) ul li a:hover{
 	color: var(--cola-white);
 }
 section:nth-of-type(4) ul li:first-of-type {
-    background-image: url(/images/duurzaamheid/dranken.jpeg);
+    background-image: url(../images/duurzaamheid/dranken.jpeg);
 }
 section:nth-of-type(4) ul li:nth-of-type(2) {
-    background-image: url(/images/duurzaamheid/water.jpeg);
+    background-image: url(../images/duurzaamheid/water.jpeg);
 }
 section:nth-of-type(4) ul li:nth-of-type(3) {
-    background-image: url(/images/duurzaamheid/verpakkingen.jpeg);
+    background-image: url(../images/duurzaamheid/verpakkingen.jpeg);
 }
 section:nth-of-type(4) ul li:nth-of-type(4) {
-    background-image: url(/images/duurzaamheid/maatschappij.jpeg);
+    background-image: url(../images/duurzaamheid/maatschappij.jpeg);
 }
 
 section:nth-of-type(5) h2{
@@ -178,7 +178,7 @@ section:nth-of-type(8) details img:hover {
    }
      /* <a href="https://www.flaticon.com/free-icons/youtube" title="youtube icons">Youtube icons created by Stockio - Flaticon</a> */
    summary::after {
-       content: url(/images/icons/arrowdown.png);
+       content: url(../images/icons/arrowdown.png);
        transform: scale(.4);
        /* content:"↓"; */
        display:block;
@@ -208,7 +208,7 @@ section:nth-of-type(8) details img:hover {
    /* Hiermee pak je alleen de directe child van de 3e details */
    details:nth-of-type(8) > ul {
        background-color: var(--cola-white);
-       background-image: url(/images/detailsimages/worldmap.png);
+       background-image: url(../images/detailsimages/worldmap.png);
        background-size: cover;
    }
    details:nth-of-type(8) > ul li details summary {
