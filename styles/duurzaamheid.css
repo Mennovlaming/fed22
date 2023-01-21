@@ -6,12 +6,6 @@ section:first-of-type {
     height: 39em;
 }
 
-
-
-
-section:nth-of-type(2){
-
-}
 section:nth-of-type(2) h2{
     font-size: 1.5em;
     text-transform: uppercase;
@@ -41,15 +35,19 @@ section:nth-of-type(3) p {
     padding-bottom: 1em;
 }
 
- button{
+section:nth-of-type(3) button,
+section:nth-of-type(7) button{
     padding: 1em 2em;
     color: var(--cola-white);
     background-color: var(--cola-black);
     border-radius: .2em;
 }
-section:nth-of-type(3) button:hover {
+ 
+section:nth-of-type(3) button:hover,
+section:nth-of-type(7) button:hover {
     background-color: var(--cola-red);
     color: var(--cola-white);
+    text-decoration: underline;
 } 
 
 section:nth-of-type(4) ul li h2 {
