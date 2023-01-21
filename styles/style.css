@@ -90,7 +90,7 @@ header nav:first-of-type ul li button img {
 
 /* hamburbutton als menu open is */
 header nav:first-of-type ul li:nth-of-type(1) button.open img {
-	content: url("../images/icons/close.png");
+	content: url("/images/icons/close.png");
 }
 
 /*****************/
