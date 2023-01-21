@@ -132,9 +132,124 @@ section:nth-of-type(7){
    
 }
 
-footer {
+
+
+/* derde section met details */
+section:nth-of-type(8) details img:hover {
+    animation-name: grow-animation;
+    animation-duration: 10s;
+   }
+   section:nth-of-type(8) {
     margin-top: 1em;
-}
+   }
+   section:nth-of-type(8) details:first-of-type ul li img {
+       width: 4em;
+   }
+   section:nth-of-type(8) details ul li img{
+       width: 8em;
+   }
+   section:nth-of-type(8) details ul:not(details:nth-of-type(3) ul li details ul) {
+       display: flex;
+       gap: 1em;
+       justify-content: center;
+       padding: 1em 0;
+       flex-wrap: wrap;
+   }
+   section:nth-of-type(8) details:not(details:nth-of-type(3) > ul li details) {
+       background: black;
+   }
+   section:nth-of-type(8) details ul li {
+       list-style-type: none;
+   }
+   
+   details:not(details:nth-of-type(8) > ul li details) {
+       border-bottom: 1px solid var(--cola-white);
+   }
+     
+   summary {
+       list-style:none;
+       align-items: center;
+       display:flex;
+       justify-content:space-between;
+       padding-left: 1em;
+       font-weight: 700;
+       font-size: 1.2em;
+       color: var(--cola-white);
+   }
+     /* <a href="https://www.flaticon.com/free-icons/youtube" title="youtube icons">Youtube icons created by Stockio - Flaticon</a> */
+   summary::after {
+       content: url(/images/icons/arrowdown.png);
+       transform: scale(.4);
+       /* content:"↓"; */
+       display:block;
+       transition:.5s;
+       filter: invert(1);
+   }
+
+
+   details[open]:not(details:nth-of-type(8) ul li details) {
+       border-bottom: 1px solid var(--cola-black);
+   }
+   details[open] ul{
+       background-color: #efefef;
+   }
+   /* de invert doet het alleen op .1? */
+   details[open] summary::after {
+       transform:rotate(.5turn) scale(.4);
+       filter: invert(.1);
+   }
+   
+   details[open] summary {
+       background-color: #efefef;
+       color: black;
+   }
+   
+   
+   /* Hiermee pak je alleen de directe child van de 3e details */
+   details:nth-of-type(8) > ul {
+       background-color: var(--cola-white);
+       background-image: url(/images/detailsimages/worldmap.png);
+       background-size: cover;
+   }
+   details:nth-of-type(8) > ul li details summary {
+       font-size: .8em;
+       background-color: transparent;
+   }
+   details:nth-of-type(8) ul li a {
+       text-decoration: none;
+       color: var(--cola-black);
+       font-size: .7em;
+   }
+   /* alle ul van de 3e details, behalve de direct child (de parent van deze) */
+   details:nth-of-type(8) ul:not(details:nth-of-type(3) > ul) {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+   
+   
+   details:nth-of-type(8) ul li details ul {
+       background-color: transparent;
+       
+   }
+   details:nth-of-type(8)[open] ul li details[open] summary::after {
+       transform:rotate(1turn) scale(.4);
+   }
+   
+   section:nth-of-type(8) button {
+       background-color: var(--cola-black);
+       width: 100%;
+       padding: 1.5em;
+       border-bottom: 1px solid var(--cola-white);
+       color: var(--cola-white);
+   }
+   section:nth-of-type(8) button:hover {
+       text-decoration: underline;
+   }
+
+
+
+
 
 @media (min-width: 750px) {
     section:not(section:first-of-type) {
