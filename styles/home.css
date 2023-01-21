@@ -1,0 +1,240 @@
+
+main section:first-of-type {
+	
+	height: 96.5vh;
+}
+main section:first-of-type div {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+}
+
+main section:first-of-type div ul li {
+	position: absolute;
+	inset: 0;
+	opacity: 0;
+	transition: 200ms opacity ease-in-out;
+	transition-delay: 200ms;
+}
+
+main section:first-of-type div ul li > img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position:center;
+}
+main section:first-of-type div ul li[data-active] {
+	opacity: 1;
+	z-index: 1;
+	transition-delay: 0;
+}
+main section:first-of-type div > ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+main section:first-of-type div button {
+	position: absolute;
+	background: none;
+	border: none;
+	font-size: 3rem;
+	top: 90%;
+	z-index: 2;
+	transform: translateY(-50%);
+	color: rgba(255, 255, 255, .5);
+	cursor:pointer;
+	border-radius: 50%;
+	padding: 0 .5rem;
+	background-color: rgba(0, 0, 0, .1);
+}
+
+main section:first-of-type div button:hover,
+main section:first-of-type div button:focus {
+	color: var(--cola-white);
+	background-color: var(--opacity);
+}
+main section:first-of-type div button:focus {
+	outline: 1px solid var(--cola-black);
+}
+
+main section:first-of-type div button.prev {
+	left: 1rem;
+}
+main section:first-of-type div button.next {
+	left: 6rem;
+}
+
+
+
+main section:nth-of-type(2) ul li h2 {
+	color: var(--cola-white);
+}
+/* Parent van de grid */
+main section:nth-of-type(2) ul {
+	list-style-type: none;
+	margin-top: 2em;
+	
+	display: grid;
+}
+/* childs van de grid */
+main section:nth-of-type(2) ul li {
+	height: 14em;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+main section:nth-of-type(2) ul li a {
+	text-decoration: none;
+}
+main section:nth-of-type(2) ul li a:hover{
+	text-decoration: underline;
+	color: var(--cola-white);
+}
+
+main section:nth-of-type(2) ul li:first-of-type{
+	background-image: url(/images/listbackgrounds/duurzaamheid.jpeg);
+}
+main section:nth-of-type(2) ul li:nth-of-type(2){
+	background-image: url(/images/listbackgrounds/neemcontactop.jpeg);
+}
+main section:nth-of-type(2) ul li:nth-of-type(3){
+	background-image: url(/images/listbackgrounds/onzemerken.jpeg);
+}
+main section:nth-of-type(2) ul li:nth-of-type(4){
+	background-image: url(/images/listbackgrounds/leeronskennen.jpeg);
+}
+main section:nth-of-type(2) ul li:nth-of-type(5){
+	background-image: url(/images/listbackgrounds/campagnes.jpeg);
+}
+main section:nth-of-type(2) ul li:nth-of-type(6){
+	background-image: url(/images/listbackgrounds/werkenbij.jpeg);
+}
+main section:nth-of-type(2) ul li:nth-of-type(7){
+	background-image: url(/images/listbackgrounds/faq.jpeg);
+}
+main section:nth-of-type(2) ul li:nth-of-type(8){
+	background-image: url(/images/listbackgrounds/pers.jpeg);
+}
+main section:nth-of-type(2) ul li:nth-of-type(9){
+	background-image: url(/images/listbackgrounds/havefun.jpeg);
+}
+
+
+
+/* derde section met details */
+section:nth-of-type(3) details img:hover {
+ animation-name: grow-animation;
+ animation-duration: 10s;
+
+}
+section:nth-of-type(3) details:first-of-type ul li img {
+	width: 4em;
+}
+section:nth-of-type(3) details ul li img{
+	width: 8em;
+}
+section:nth-of-type(3) details ul:not(details:nth-of-type(3) ul li details ul) {
+	display: flex;
+	gap: 1em;
+	justify-content: center;
+	padding: 1em 0;
+	flex-wrap: wrap;
+}
+section:nth-of-type(3) details:not(details:nth-of-type(3) > ul li details) {
+	background: black;
+}
+section:nth-of-type(3) details ul li {
+	list-style-type: none;
+}
+
+details:not(details:nth-of-type(3) > ul li details) {
+	border-bottom: 1px solid var(--cola-white);
+}
+  
+summary {
+	list-style:none;
+	align-items: center;
+	display:flex;
+	justify-content:space-between;
+	padding-left: 1em;
+	font-weight: 700;
+	font-size: 1.2em;
+	color: var(--cola-white);
+}
+  /* <a href="https://www.flaticon.com/free-icons/youtube" title="youtube icons">Youtube icons created by Stockio - Flaticon</a> */
+summary::after {
+	content: url(/images/icons/arrowdown.png);
+	transform: scale(.4);
+	/* content:"↓"; */
+	display:block;
+	transition:.5s;
+	filter: invert(1);
+}
+details[open]:not(details:nth-of-type(3) ul li details) {
+	border-bottom: 1px solid var(--cola-black);
+}
+details[open] ul{
+	background-color: #efefef;
+}
+/* de invert doet het alleen op .1? */
+details[open] summary::after {
+	transform:rotate(.5turn) scale(.4);
+	filter: invert(.1);
+}
+
+details[open] summary {
+	background-color: #efefef;
+	color: black;
+}
+
+
+/* Hiermee pak je alleen de directe child van de 3e details */
+details:nth-of-type(3) > ul {
+	background-color: var(--cola-white);
+	background-image: url(/images/detailsimages/worldmap.png);
+	background-size: cover;
+}
+details:nth-of-type(3) > ul li details summary {
+	font-size: .8em;
+	background-color: transparent;
+}
+details:nth-of-type(3) ul li a {
+	text-decoration: none;
+	color: var(--cola-black);
+	font-size: .7em;
+}
+/* alle ul van de 3e details, behalve de direct child (de parent van deze) */
+details:nth-of-type(3) ul:not(details:nth-of-type(3) > ul) {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+details:nth-of-type(3) ul li details ul {
+	background-color: transparent;
+	
+}
+details:nth-of-type(3)[open] ul li details[open] summary::after {
+	transform:rotate(1turn) scale(.4);
+}
+
+section:nth-of-type(3) button {
+	background-color: var(--cola-black);
+	width: 100%;
+	padding: 1.5em;
+	border-bottom: 1px solid var(--cola-white);
+	color: var(--cola-white);
+}
+section:nth-of-type(3) button:hover {
+	text-decoration: underline;
+}
+/* section:nth-of-type(3) button img{
+	transform: rotate(.5turn);
+	filter: invert(1);
+	width: 2em;
+} */

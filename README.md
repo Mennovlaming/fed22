@@ -208,16 +208,17 @@ Bevindingen die ik heb gevonden met het gebruik van shocks:
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+ Bij het begin kreeg ik een probleem met de screenreader, hij wou de button van mijn navigatiemenu niet openen, dit bleek een typefout te zijn. Verder leest hij ook als de navbar ingeklapt is alle links voor, dat kan misschien verwarrend zijn.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+ Het beste gedrag voor de screenreader zou zijn dat de navigatiebar openklapt als iemand er 'in' tabt, en hem weer sluit als je er uit tabt, zodat de gebruiker altijd alle links te zien krijgt.
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+ Ik heb voor de 'Home' knop een h2 gebruikt, dit is niet optimaal voor screenreaders, ik heb dit veranderd in een link.
+ #### before
+ <img src="readme-images/codescreen1.png" width="375px" alt="home h2 word link">
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+ #### after
+ <img src="readme-images/codescreen1.png" width="375px" alt="home h2 word link">
 
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)

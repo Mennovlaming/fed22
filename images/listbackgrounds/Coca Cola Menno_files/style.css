@@ -18,11 +18,9 @@ button, summary {
 /*********************/
 :root {
 	/* startje */
+	--color-text:#111;
+	--color-background:#eee;
 	--max-height: 152px;
-	--cola-red: #E21013;
-	--cola-black: #000000;
-	--cola-white: #ffffff;
-	--opacity: rgba(0,0,0,.5);
 	/* kijk of deze maxheight de offsetheight van het element kan zijn. */
 }
 
@@ -43,43 +41,34 @@ button {
 	background: none;
 } 
 
-a:focus {
-	outline: 2px dotted	 lightgrey;
-	padding: 1em;
-	background-color: var(--opacity); 
-}
+
+
 
 
 /*************/
 /* hoofdmenu */
 /*************/
-header nav ul li a:hover {
-	text-decoration: underline;
-	text-decoration-color: var(--cola-red);
-	text-decoration-thickness: .1em;
-	
+header nav:first-of-type {
 	
 }
+
 header nav:first-of-type ul {
 	min-height:3em;
-	background-color: var(--cola-black);
+	padding: .5em;
+	background-color: black;
+
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
 	list-style: none;
-	position: fixed;
-    z-index: 5;
-	width: 100%;
 }
 
-/* Home link coca cola nederland */
-header nav:first-of-type ul li a {
+header nav:first-of-type ul li h2 {
 	text-transform: uppercase;
-	color: var(--cola-white);
+	color: white;
 	font-size: .8rem;
-	font-weight: 700;
 	text-align:center;
-	text-decoration: none;
 }
 
 /* hamburger en zoekbutton */
@@ -93,6 +82,10 @@ header nav:first-of-type ul li:nth-of-type(1) button.open img {
 	content: url("../images/icons/close.png");
 }
 
+
+
+
+
 /*****************/
 /* hamburgermenu */
 /*****************/
@@ -102,10 +95,12 @@ header nav:nth-of-type(2) {
 	left: 0;
 	right:0;
 	height: 0;
-	z-index: 5;
+	z-index: 1;
 	overflow-y: hidden;
 	/* margin-top: 3em; - nu top 3em */
+	
 	background-color: black;
+	
 	transition: 0.5s;
 }
 
@@ -135,7 +130,7 @@ header nav:nth-of-type(2) a {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 800;
-	color: var(--cola-white);
+	color: white;
 	min-height: 2rem;
 
 	display:flex;
@@ -153,19 +148,17 @@ header nav:nth-of-type(2) > ul > li > a {
 /* plusbuttons */
 header nav:nth-of-type(2) > ul > li button {
 	width:2rem;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 	background-color: #202020;
 }
 
 header nav:nth-of-type(2) > ul > li button img {
 	width: 1.5em;
 	display:block;
-}
-header nav:nth-of-type(2) > ul > li button:hover img {
-	filter: contrast(2);
-	transform: scale(1.2);
 }
 
 /* als submenu open is */
@@ -196,103 +189,75 @@ header nav:nth-of-type(2) ul ul a {
 }
 
 
-footer {
-	background-color: var(--cola-black);
-	padding: 1em 0;
+main section:first-of-type {
+	background-image: url(/images/grouppicture.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 41em;
 }
-footer h2 {
-	text-transform: uppercase;
-	text-align: center;
-	color: var(--cola-white);
-	padding: 1em 0;
+
+main section:nth-of-type(2) ul li h2 {
+	color: white;
 }
-footer p {
-	color: var(--cola-white);
-	font-size: .8em;
-	text-align: center;
-}
-footer ul{
-	display: flex;
-	justify-content: center;
-	gap: 1em;
-	margin-bottom: 2em;
-}
-footer ul li {
+/* Parent van de grid */
+main section:nth-of-type(2) ul {
 	list-style-type: none;
+
+	max-width: 1200px;
+	
+	display: grid;
+	gap: 1em;
+	
 }
-footer ul li:nth-of-type(2)::before, 
-footer ul li:nth-of-type(3)::before, 
-footer ul li:nth-of-type(4)::before {
-	content: "|";
-	color: var(--cola-white);
-	padding-right: 1em;
+/* childs van de grid */
+main section:nth-of-type(2) ul li:first-of-type{
+	height: 4em;
+	padding: 1em;
+	background-color:skyblue;
 }
-footer ul li a {
-	font-size: .8em;
-	text-decoration: none;
-	color: var(--cola-white);
+main section:nth-of-type(2) ul li:nth-of-type(2){
+	height: 4em;
+	padding: 1em;
+	background-color:darkred;
+}
+main section:nth-of-type(2) ul li:nth-of-type(3){
+	height: 4em;
+	padding: 1em;
+	background-color:darkgreen
+}
+main section:nth-of-type(2) ul li:nth-of-type(4){
+	height: 4em;
+	padding: 1em;
+	background-color: darkblue;
+}
+main section:nth-of-type(2) ul li:nth-of-type(5){
+	height: 4em;
+	padding: 1em;
+	background-color: dimgray;
+}
+main section:nth-of-type(2) ul li:nth-of-type(6){
+	height: 4em;
+	padding: 1em;
+	background-color: darkviolet;
+}
+main section:nth-of-type(2) ul li:nth-of-type(7){
+	height: 4em;
+	padding: 1em;
+	background-color: darkorange;
+}
+main section:nth-of-type(2) ul li:nth-of-type(8){
+	height: 4em;
+	padding: 1em;
+	background-color: darkkhaki;
+}
+main section:nth-of-type(2) ul li:nth-of-type(9){
+	height: 4em;
+	padding: 1em;
+	background-color:darkgoldenrod;
 }
 
 
-/* media queries */
-@media (min-width: 600px) {
-	main section:nth-of-type(2) ul {
-		 grid-template-columns: 4fr 3fr 1fr 4fr; 
-		}
-		main section:nth-of-type(2) ul li:nth-of-type(1) {
-			grid-column: span 2;
-			grid-row: span 2;
-			height: 28em;
-		}
-		main section:nth-of-type(2) ul li:nth-of-type(2), 
-		main section:nth-of-type(2) ul li:nth-of-type(3),
-		main section:nth-of-type(2) ul li:nth-of-type(4),
-		main section:nth-of-type(2) ul li:nth-of-type(5),
-		main section:nth-of-type(2) ul li:nth-of-type(7){
-			grid-column: span 2;
-		}
-		main section:nth-of-type(2) ul li:nth-of-type(9) {
-			grid-column: span 4;
-			height: 28em;
-		}
-		footer ul li a {
-			font-size: 1em;
-		}	
-}  
-
-@media (min-width: 900px) {
-	main section:nth-of-type(2) ul {
-		grid-template-columns: 4fr 3fr 1fr 4fr; 
-	   }
-	   /* met span 2 laat je de column 2 plekken innemen van de fr (de eerste 2 zijn dus 4 fr + 3fr  */
-	   main section:nth-of-type(2) ul li:nth-of-type(1) {
-		   grid-column: span 2;
-		   grid-row: span 2;
-		   height: 28em;
-	   }
-	   main section:nth-of-type(2) ul li:nth-of-type(2), 
-	   main section:nth-of-type(2) ul li:nth-of-type(3),
-	   main section:nth-of-type(2) ul li:nth-of-type(4),
-	   main section:nth-of-type(2) ul li:nth-of-type(5) {
-		   grid-column: span 2;
-	   }
-	   main section:nth-of-type(2) ul li:nth-of-type(6) {
-		grid-column: 1 / span 1;
-		grid-row-start: 4;
-	   }
-	   /* grid-column 1 / span 1 = start op 1 en end op 1 */
-	   main section:nth-of-type(2) ul li:nth-of-type(7) {
-		grid-column: 1 / span 1;
-	   }
-	   main section:nth-of-type(2) ul li:nth-of-type(8) {
-		grid-column: 1 / span 1;
-	   }
-	   main section:nth-of-type(2) ul li:nth-of-type(9) {
-		grid-column: span 3;
-		grid-row: 4 / span 3;
-		height: 42em;
-	   }
-}  
 
 @media (min-width: 62.5em) {
 	header nav:nth-of-type(2) {
@@ -334,13 +299,4 @@ footer ul li a {
 	}
 	
 	
-}
-
-@keyframes grow-animation {
-	0% {
-		transform: scale(1);
-	}
-	100% {
-		transform: scale(2);
-	}
 }
