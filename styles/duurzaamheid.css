@@ -252,7 +252,7 @@ section:nth-of-type(8) details img:hover {
 
 
 @media (min-width: 750px) {
-    section:not(section:first-of-type) {
+    section:not(section:first-of-type, section:nth-of-type(8)) {
         padding: 0 10.5em;
     }
     section:nth-of-type(2) h2{

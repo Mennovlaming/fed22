@@ -96,31 +96,31 @@ main section:nth-of-type(2) ul li a:hover{
 }
 
 main section:nth-of-type(2) ul li:first-of-type{
-	background-image: url(/images/listbackgrounds/duurzaamheid.jpeg);
+	background-image: url(images/listbackgrounds/duurzaamheid.jpeg);
 }
 main section:nth-of-type(2) ul li:nth-of-type(2){
-	background-image: url(/images/listbackgrounds/neemcontactop.jpeg);
+	background-image: url(images/listbackgrounds/neemcontactop.jpeg);
 }
 main section:nth-of-type(2) ul li:nth-of-type(3){
-	background-image: url(/images/listbackgrounds/onzemerken.jpeg);
+	background-image: url(images/listbackgrounds/onzemerken.jpeg);
 }
 main section:nth-of-type(2) ul li:nth-of-type(4){
-	background-image: url(/images/listbackgrounds/leeronskennen.jpeg);
+	background-image: url(images/listbackgrounds/leeronskennen.jpeg);
 }
 main section:nth-of-type(2) ul li:nth-of-type(5){
-	background-image: url(/images/listbackgrounds/campagnes.jpeg);
+	background-image: url(images/listbackgrounds/campagnes.jpeg);
 }
 main section:nth-of-type(2) ul li:nth-of-type(6){
-	background-image: url(/images/listbackgrounds/werkenbij.jpeg);
+	background-image: url(images/listbackgrounds/werkenbij.jpeg);
 }
 main section:nth-of-type(2) ul li:nth-of-type(7){
-	background-image: url(/images/listbackgrounds/faq.jpeg);
+	background-image: url(images/listbackgrounds/faq.jpeg);
 }
 main section:nth-of-type(2) ul li:nth-of-type(8){
-	background-image: url(/images/listbackgrounds/pers.jpeg);
+	background-image: url(images/listbackgrounds/pers.jpeg);
 }
 main section:nth-of-type(2) ul li:nth-of-type(9){
-	background-image: url(/images/listbackgrounds/havefun.jpeg);
+	background-image: url(images/listbackgrounds/havefun.jpeg);
 }
 
 
@@ -146,6 +146,7 @@ section:nth-of-type(3) details ul:not(details:nth-of-type(3) ul li details ul) {
 }
 section:nth-of-type(3) details:not(details:nth-of-type(3) > ul li details) {
 	background: black;
+	padding: 1em;
 }
 section:nth-of-type(3) details ul li {
 	list-style-type: none;
@@ -167,7 +168,7 @@ summary {
 }
   /* <a href="https://www.flaticon.com/free-icons/youtube" title="youtube icons">Youtube icons created by Stockio - Flaticon</a> */
 summary::after {
-	content: url(/images/icons/arrowdown.png);
+	content: url(images/icons/arrowdown.png);
 	transform: scale(.4);
 	/* content:"↓"; */
 	display:block;
@@ -195,7 +196,7 @@ details[open] summary {
 /* Hiermee pak je alleen de directe child van de 3e details */
 details:nth-of-type(3) > ul {
 	background-color: var(--cola-white);
-	background-image: url(/images/detailsimages/worldmap.png);
+	background-image: url(images/detailsimages/worldmap.png);
 	background-size: cover;
 }
 details:nth-of-type(3) > ul li details summary {
