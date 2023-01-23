@@ -97,16 +97,11 @@ Bevindingen die ik heb gevonden met het gebruik van shocks:
 ## Breakdownschets (week 1)
 
 <details>
-  <summary>uitwerken na afloop 2e werkgroep</summary>
+  <summary>Breakdown schets</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown.png" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -141,7 +136,11 @@ Bevindingen die ik heb gevonden met het gebruik van shocks:
   | Vraag over wanneer je grid gebruikt en wanneer flexbox
 
   ### Verslag van meeting
-  Deze week zijn we gaan testen op verschillende beperkingen, onder andere oogbeperkingen
+  Het probleem waar ik tegenaan liep was een HTML element dat niet luisterde naar mijn CSS, 
+  voor het gemakt had ik mijn navigatiebar gemaakt met behulp van classes, iets waar ik 
+  later vanaf wou stappen. Toen ik de classes om wou zetten naar semantische HTML luisterde mijn
+  CSS niet meer. Tijdens de meeting is het mij duidelijk geworden dat ik niet de juiste volgorde had 
+  aangehouden voor mijn CSS, vandaar dat sommige elementen niet luisterde. 
 
 </details>
 
@@ -186,12 +185,8 @@ Bevindingen die ik heb gevonden met het gebruik van shocks:
   | Hoe ontwerp je het kruisje dat input form leegt?
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+  
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
 
 </details>
 
@@ -221,49 +216,13 @@ Bevindingen die ik heb gevonden met het gebruik van shocks:
  <img src="readme-images/codescreen1.png" width="375px" alt="home h2 word link">
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Met de schokken en elastiekjes is mijn webiste prima te gebruiken, ik maak gebruik van grote secties met veel 
+  afbeeldingen zodat je geen last hebt van kleine lastige klikbare dingen.
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
-</details>
-
-
-
-
-
-## Voortgang 3 (week 4)
-
-<details>
-  <summary>uitwerken voor 3e voortgang</summary>
-
-  ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
-
+  Om mijn website beter te laten werken voor kleurenblinden, heb ik bij hovers in plaats van alleen een kleur die 
+  veranderd, ook ervoor gezorgd dat de button of tekst word underlined.
 </details>
 
 
@@ -276,19 +235,22 @@ Bevindingen die ik heb gevonden met het gebruik van shocks:
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-
+  <img src="/readme-images/indexpage.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/duurzaamheidpage.png" width="375px" alt="top">
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Ik ben erg blij met dit grid, ik had nog nooit eerder met CSS grid gewerkt, 
+  nu begrijp ik dit beter en vind ik dat het best goed gelukt is. 
+  <img src="readme-images/grid.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Omdat ik de slider van coca cola zelf niet goed vond werken, (het switchen van afbeeldingen was stuk (?))
+  Heb ik besloten om deze zelf te maken, achteraf had ik graag een automatische slider gemaakt die ik ook met 
+  de pijltjes kon bedienen, dit werd lastig i.v.m. de tijd.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/slider.png" width="375px" alt="bummer">
 </details>
 
 
@@ -300,10 +262,13 @@ Bevindingen die ik heb gevonden met het gebruik van shocks:
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
+  
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://www.freecodecamp.org/news/semantic-html-alternatives-to-using-divs/
+  2. https://www.youtube.com/watch?v=9HcxHDS2w1s&ab_channel=WebDevSimplified
+  3. https://w3collective.com/scroll-to-top-button-javascript/
+  4. https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/invert
+  5. https://css-tricks.com/snippets/css/complete-guide-grid/
+  6. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 </details>

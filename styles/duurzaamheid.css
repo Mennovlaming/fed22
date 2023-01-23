@@ -290,7 +290,10 @@ section:nth-of-type(8) details img:hover {
         flex-direction: row;
         gap: 1em;
     }
-   
-	 
 }  
 
+@media (prefers-color-scheme: dark) {
+   section:nth-of-type(4) {
+    background-color: var(--cola-white);
+   }
+}
